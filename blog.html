@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+        
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+        }
+        
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h2>Blog</h2>
+        <p>Simple Questions Answer
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>The scope of var, let, and const</h2>
+                <img src="./img/var-let-const.png" alt="" class="sm:h-[400px] w-[350px] lg:h-[400px] w-[700px]">
+                <h4>var:-</h4>
+                <p>The scope of a var variable is functional scope. The scope of a let variable is block scope. The scope of a const variable is block scope. It can be updated and re-declared into the scope</p>
+                <h4>const:-</h4>
+                <p>const declarations are scoped to blocks as well as functions. const declarations can only be accessed after the line of declaration is reached (see temporal dead zone). For this reason, const declarations are commonly regarded as non-hoisted.</p>
+                <h4>let:-</h4>
+                <p>Compared with var , let declarations have the following differences: let declarations are scoped to blocks as well as functions. let declarations can only be accessed after the place of declaration is reached (see temporal dead zone).
+                    For this reason, let declarations are commonly regarded as non-hoisted.
+                </p>
+
+            </div>
+            <div class="card">
+                <h2> The use cases of null and undefined</h2>
+                <img src="./img/null-and-undfn.png" alt="">
+                <h4> cases of null :-</h4>
+                <p>What is the use of null? A NULL value is used to represent a missing value, but it usually has one of three different interpretations: The value unknown (value exists but is not known) Value not available (exists but is purposely withheld)</p>
+                <h4> cases of undefined:-</h4>
+                <p>In computing (particularly, in programming), undefined value is a condition where an expression does not have a correct value, although it is syntactically correct. An undefined value must not be confused with empty string, Boolean "false"
+                    or other "empty" (but defined) values.
+                </p>
+
+            </div>
+            <div class="card">
+                <h2>REST API</h2>
+                <img src="./img/Rest-API.png" alt="">
+                <h4>REST API :-</h4>
+                <p>An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other. A REST API is an API that conforms to the design principles of the REST, or representational
+                    state transfer architectural style.</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <!-- <div class="fakeimg" style="height:100px;">Image</div> -->
+                <img src="./img/1.png" alt="" class="fakeimg">
+                <h3>Pashanto Sutradhar</h3>
+                <h4>Learner | Web Developer</h4>
+                <p>An enthusiastic student and eager learner pursuing web development. Passionate about creating user-friendly websites and continuously expanding my skillset. Seeking opportunities to contribute and grow in the dynamic world of technology.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer ">
+        <p>Copyright © 2023 || Prashanto Sutradhar</p>
+    </div>
+
+    <section>
+
+    </section>
+
+</body>
+
+</html>
